@@ -7,9 +7,14 @@ header {
     background-color: blue;
 }
 
+figure {
+    margin: 0;
+}
+
 .article-text {
-    width: 600px;
+    font-family: georgia,'times new roman',times,serif;
     font-size: 1.25rem;
+    width: 600px;
 }
 
 .btn-icons {
@@ -24,6 +29,18 @@ header {
 i {
     vertical-align: middle;
 }
+
+.article-thumbnails {
+    display: inline-block;
+    width: 273px;
+    height: 182px;
+}
+
+.article-thumbnails img {
+    width: 100%;
+}
+
+
 
 .nav-header svg {
     width: 185px;
