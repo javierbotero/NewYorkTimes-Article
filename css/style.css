@@ -6,3 +6,25 @@ header {
     height: 43px;
     background-color: blue;
 }
+
+.article-text {
+    width: 600px;
+    font-size: 1.25rem;
+}
+
+.btn-icons {
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 14px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+i {
+    vertical-align: middle;
+}
+
+.nav-header svg {
+    width: 185px;
+}
