@@ -1,3 +1,4 @@
+
 body {
     background-color: aquamarine;
 }
@@ -55,8 +56,21 @@ i {
     width: 100%;
 }
 
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    margin: -8px;
+    padding: 10px;
+    align-items: center;
+}
 
 
-.nav-header svg {
+
+
+
+.svg {
     width: 185px;
 }
