@@ -9,6 +9,14 @@ header {
     background-color: blue;
 }
 
+footer {
+    position: fixed;
+    width: 100%;
+    height: 61px;
+    bottom: 0px;
+    background-color: aquamarine;
+}
+
 .asides-contents {
     display: flex;
     flex-direction: column;
@@ -87,10 +95,38 @@ nav {
 }
 
 .more-articles {
-    clear: both;
     background-color: antiquewhite;
+}
+
+.pictures-articles {
+    float: left;
+    width: 900px;
+    background-color: bisque;
+}
+
+.most-popular {
+    float: right;
+    height: 500px;
+    width: 300px;
+    background-color: aquamarine;
+}
+
+.nav-bottom {
+    height: 337px;
+    width: 100%;
+    background-color: cadetblue;
 }
 
 .svg {
     width: 185px;
 }
+
+.bottom-menu-container {
+    display: flex;
+}
+
+.bottom-menu-items {
+    flex: 1;
+    background-color: aquamarine;
+}
+
