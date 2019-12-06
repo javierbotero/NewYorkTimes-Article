@@ -1,6 +1,7 @@
 
 body {
-    background-color: aquamarine;
+    background-color: white;
+    color: black;
 }
 
 header {
@@ -8,19 +9,27 @@ header {
     background-color: blue;
 }
 
-aside {
-    display: inline-block;
+.asides-contents {
+    /* display: inline-block; */
     float: right;
     background-color: blueviolet;
     width: 210px;
-    margin-left: 45px;
+    margin-top: 600px;
+}
 
+article {
+    float: left;
 }
 
 .aside-divs {
- background-color: aqua;
- width: 100%;
- height: 600px;
+    background-color: aqua;
+    width: 100%;
+    height: 600px;
+}
+
+.spoiler {
+    width: 250px;
+    height: 80px;
 }
 
 figure {
@@ -67,9 +76,10 @@ nav {
     align-items: center;
 }
 
-
-
-
+.more-articles {
+    clear: both;
+    background-color: antiquewhite;
+}
 
 .svg {
     width: 185px;
