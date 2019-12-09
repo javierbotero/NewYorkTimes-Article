@@ -92,9 +92,30 @@ nav {
     align-items: center;
 }
 
+
+
 .main-content {
     margin: 0 auto;
     width: 1200px;
+}
+
+.inflation-theory-container {
+    width: 945px;
+    height: 722px;
+    margin: 15px 0;
+    position: relative;
+    right: 163px;
+    background: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+    background-size: 945px;
+}
+
+.bicep2-photo {
+    position: relative;
+    right: 80px;
+}
+
+.bicep2-photo img {
+    width: 720px;
 }
 
 .more-articles {
