@@ -51,7 +51,7 @@ figure {
 }
 
 .article-text {
-    font-family: georgia,'times new roman',times,serif;
+    font-family: nyt-franklin, georgia,'times new roman',times,serif;
     font-size: 1.25rem;
     margin-left: 240px;
     width: 600px;
@@ -101,12 +101,39 @@ nav {
 
 .inflation-theory-container {
     width: 945px;
-    height: 722px;
     margin: 15px 0;
     position: relative;
     right: 163px;
+
+}
+
+.inflation-theory-graphic {
+    
+    height: 576px;
     background: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
     background-size: 945px;
+}
+
+.inflation-theory-row {
+    display: flex;
+}
+
+.inflation-theory-tab {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 140px;
+    padding-left: 5px;
+    width: 25%;
+}
+
+.inflation-theory-tab p {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+.inflation-theory-tab span {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .bicep2-photo {
