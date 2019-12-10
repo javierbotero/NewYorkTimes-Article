@@ -21,6 +21,20 @@ footer {
     background-color: aquamarine;
 }
 
+button {
+    background-color: #567b95;
+    border: 1px solid #326891;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
+    margin-left: 6px;
+    padding: 11px 12px 8px;
+    vertical-align: center;
+}
+
+
 .asides-contents {
     float: right;
     width: 270px;
@@ -51,7 +65,7 @@ figure {
 }
 
 .article-text {
-    font-family: nyt-franklin, georgia,'times new roman',times,serif;
+    font-family: georgia,'times new roman',times,serif;
     font-size: 1.25rem;
     margin-left: 240px;
     width: 600px;
@@ -99,6 +113,8 @@ nav {
     width: 1200px;
 }
 
+/* #region inflation-theory */
+
 .inflation-theory-container {
     width: 945px;
     margin: 15px 0;
@@ -135,6 +151,8 @@ nav {
     font-size: 16px;
     font-weight: bold;
 }
+
+/* #endregion */
 
 .bicep2-photo {
     position: relative;
@@ -175,9 +193,33 @@ nav {
     height: 66px;
 }
 
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    padding: 0 15px;
+}
+
+.nav-left a {
+    color: #000;
+    font-size: 14.25px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-right {
+    display: flex;
+}
+
 .svg {
     width: 185px;
 }
+
+/* #region bottom-menu */
 
 .bottom-menu-container {
    display: flex;
@@ -194,6 +236,8 @@ nav {
 .bottom-menu-items-right {
     border-left: 1px solid rgb(226, 226, 226);
 }
+
+/* #endregion */
 
 hr {
     border: .5px solid rgb(226, 226, 226);
