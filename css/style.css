@@ -61,9 +61,35 @@ article {
     height: 600px;
 }
 
+.sign-up button {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: small;
+}
+
 .spoiler {
-    width: 250px;
-    height: 80px;
+    color: rgb(51, 51, 51);
+    display: flex;
+    width: 210px;
+    height: 75px;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    margin: 10px 0;
+    clear: both;
+}
+
+.spoiler img {
+    width: 75px;
+    height: 75px;
+    float: left;
+    padding-right: 5px;
+}
+
+.paid-post {
+    color: #121212;
+    font-size: 12px;
+    line-height: 15px;
 }
 
 figure {
@@ -310,6 +336,6 @@ nav {
 /* #endregion */
 
 hr {
-    border: .5px solid rgb(226, 226, 226);
+    border: .2px solid rgb(226, 226, 226);
 }
 
