@@ -1,7 +1,7 @@
 
 body {
     background-color: white;
-    color: black;
+    color: #333;
 }
 
 header {
@@ -64,10 +64,26 @@ figure {
     margin: 0;
 }
 
+.story {
+    margin: 50px 240px;
+}
+
+.author {
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.article-date {
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-size: small;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
 .article-text {
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
     font-size: 1.25rem;
-    margin-left: 240px;
     width: 600px;
 }
 
@@ -97,6 +113,7 @@ i {
 
 nav {
     background-color: #fff;
+    border-bottom: 1px solid #e2e2e2;
     display: flex;
     justify-content: space-between;
     top: 0;
@@ -108,10 +125,6 @@ nav {
 
 .main-photo {
     width: 800px;
-}
-
-.photo-caption span {
-    color: #888;
 }
 
 .main-content {
@@ -130,10 +143,27 @@ nav {
 
 .photo-caption {
     font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-size: 16px;
     color: #666;
 }
 
+.photo-caption span {
+    color: #888;
+    font-size: 14px;
+}
+
+.date-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* #region inflation-theory */
+
+.inflation-theory-header h1 {
+    font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+    font-weight: 700;
+    font-size: large;
+}
 
 .inflation-theory-container {
     width: 945px;
@@ -229,6 +259,10 @@ nav {
     line-height: 19px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
 }
 
 .nav-right {
