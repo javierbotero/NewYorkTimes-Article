@@ -1,2 +1,4 @@
 stylelint.config.js
+package-lock.json
 .stickler.yml
+node_modules/
