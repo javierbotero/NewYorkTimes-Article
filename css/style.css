@@ -251,8 +251,12 @@ nav {
 }
 
 .inflation-theory-tab span {
-    font-size: 16px;
+    font-size: 11px;
+    font-style: normal;
     font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 17px;
+    color: #000;
 }
 
 /* #endregion */
@@ -361,6 +365,7 @@ nav {
 
 .bottom-menu-container {
    display: flex;
+   text-transform: capitalize;
    justify-content: space-around;
    border-bottom: 1px solid rgb(226, 226, 226);
 }
