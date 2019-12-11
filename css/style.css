@@ -364,20 +364,47 @@ nav {
 /* #region bottom-menu */
 
 .bottom-menu-container {
-   display: flex;
-   text-transform: capitalize;
-   justify-content: space-around;
-   border-bottom: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-around;
+    text-align: left;
+    width: 100%;
+    color: #000;
+    font-family: nyt-franklin;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-top: -20px;
+}
+
+.bottom-menu-container p {
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .bottom-menu-items {
+    clear: both;
+    display: flex;
     width: 197px;
-    height: 337px;
-    flex: 1;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -80px;
+}
+
+.bottom-menu-items li a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom-menu-items li a:hover {
+    text-decoration: underline;
 }
 
 .bottom-menu-items-right {
-    border-left: 1px solid rgb(226, 226, 226);
+    border-left: 1px solid rgb(63, 25, 25);
 }
 
 /* #endregion */
