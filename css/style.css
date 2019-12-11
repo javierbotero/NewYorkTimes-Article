@@ -15,11 +15,22 @@ aside {
 }
 
 footer {
+    border-top: 1px solid #000;;
     position: fixed;
     width: 100%;
-    height: 61px;
+    height: 50px;
+    line-height: 17px;
     bottom: 0px;
-    background-color: aquamarine;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    background-color: #fff;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
 }
 
 button {
@@ -330,7 +341,6 @@ nav {
 
 .nav-bottom-item {
     width: 100%;
-    height: 66px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -338,6 +348,7 @@ nav {
 
 .nav-bottom-item-menu {
     width: 1000px;
+    margin-top: 15px;
 }
 
 .nav-bottom-item a {
@@ -406,7 +417,6 @@ nav {
     font-size: 14px;
     font-weight: 500;
     line-height: 23px;
-    margin-top: -20px;
 }
 
 .bottom-menu-container p {
@@ -422,6 +432,7 @@ nav {
     flex-direction: column;
     text-align: left;
     margin-left: -80px;
+    margin-top: -20px;
 }
 
 .bottom-menu-items li a {
@@ -433,8 +444,9 @@ nav {
     text-decoration: underline;
 }
 
-.bottom-menu-items-right {
-    border-left: 1px solid rgb(63, 25, 25);
+.bottom-menu-items-right ul {
+    border-left: 1px solid rgb(226, 226, 226);
+    padding-left: 15px;
 }
 
 /* #endregion */
