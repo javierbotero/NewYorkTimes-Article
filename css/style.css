@@ -489,10 +489,6 @@ nav {
   margin-bottom: 5px;
 }
 
-.bottom-menu-items li {
-  float: left;
-}
-
 .bottom-menu-items li a:hover {
   text-decoration: underline;
 }
