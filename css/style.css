@@ -4,16 +4,12 @@ body {
   color: #333;
 }
 
-header {
-  height: 43px;
-  background-color: blue;
-}
-
 aside {
   margin: 300px 0;
 }
 
 footer {
+  clear: both;
   border-top: 1px solid #000;
   position: fixed;
   width: 100%;
@@ -29,6 +25,7 @@ footer {
 
 i {
   vertical-align: middle;
+  color: gray;
 }
 
 .footer-note {
@@ -37,13 +34,16 @@ i {
 }
 
 .footer-more {
-  display: flex;
   float: right;
   margin-right: 300px;
 }
 
-.footer-more i {
-  margin-left: 40px;
+#expand {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: small;
+  font-weight: 700;
+  color: gray;
 }
 
 iframe {
@@ -54,14 +54,13 @@ iframe {
 button {
   background-color: #567b95;
   border: 1px solid #326891;
-  border-radius: 4px;
+  border-radius: 3px;
   display: inline-block;
   color: #fff;
+  font-size: 11px;
   font-weight: bolder;
   letter-spacing: 0.05em;
-  margin-left: 6px;
-  padding: 11px 12px 8px;
-  vertical-align: center;
+  padding: 8px;
 }
 
 li {
@@ -71,6 +70,7 @@ li {
 
 .nav-bar {
   background-color: white;
+  border-bottom: 1px solid #e2e2e2;
   z-index: 1;
 }
 
@@ -88,6 +88,7 @@ li {
 #editor-pick {
   position: relative;
   top: 250px;
+  clear: both;
 }
 
 article {
@@ -102,19 +103,16 @@ article {
 .sign-up button {
   width: 100%;
   text-transform: uppercase;
-  font-size: small;
 }
 
 .spoiler {
   color: rgb(51, 51, 51);
-  display: flex;
   width: 210px;
   height: 75px;
   font-size: 14px;
   line-height: 17px;
-  align-items: center;
+  vertical-align: center;
   margin: 10px 0;
-  clear: both;
 }
 
 .spoiler img {
@@ -150,9 +148,11 @@ figure {
   font-size: small;
   font-weight: 500;
   margin-bottom: 30px;
+  float: left;
 }
 
 .article-text {
+  clear: both;
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
   font-size: 1.25rem;
   width: 600px;
@@ -171,16 +171,20 @@ figure {
   width: 100%;
 }
 
+.article-thumbnails a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+  font-size: 1.125rem;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+}
+
 nav {
   background-color: #fff;
-  border-bottom: 1px solid #e2e2e2;
-  display: flex;
-  justify-content: space-between;
   top: 0;
   position: sticky;
-  margin: -8px;
+  margin: auto;
   padding: 10px;
-  align-items: center;
 }
 
 .main-photo {
@@ -210,148 +214,18 @@ nav {
   font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
 }
 
-.photo-caption {
-  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
-  font-size: 16px;
-  color: #666;
-}
-
-.photo-caption span {
-  color: #888;
-  font-size: 14px;
-}
-
-.date-icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* #region inflation-theory */
-
-.inflation-theory-header h1 {
-  font-family: nyt-cheltenham, georgia, times new roman, times, serif;
-  font-weight: 700;
-  font-size: large;
-}
-
-.inflation-theory-container {
-  width: 945px;
-  margin: 15px 0;
-  position: relative;
-  right: 163px;
-}
-
-.inflation-theory-graphic {
-  height: 576px;
-  background: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
-  background-size: 945px;
-}
-
-.inflation-theory-row {
-  display: flex;
-}
-
-.inflation-theory-tab {
-  font-family: nyt-franklin, arial, helvetica, sans-serif;
-  padding-top: 140px;
-  padding-left: 5px;
-  width: 25%;
-}
-
-.inflation-theory-tab p {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 300;
-}
-
-.inflation-theory-tab span {
-  font-size: 11px;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  line-height: 17px;
-  color: #000;
-}
-
-/* #endregion */
-
-.bicep2-photo {
-  position: relative;
-  right: 80px;
-}
-
-.bicep2-photo img {
-  width: 720px;
-}
-
-.more-articles {
-  background-color: antiquewhite;
-}
-
-.pictures-articles {
-  float: left;
-  width: 900px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.article-thumbnails {
-  width: 273px;
-  margin: 10px 10px;
-  flex-basis: 30%;
-  display: flex;
-  flex-direction: column;
-}
-
-.thumbnail-pic {
-  font-size: 0.625rem;
-  text-align: right;
-  color: rgb(153, 153, 153);
-}
-
 .pictures-articles a {
-  flex-basis: 100%;
   height: 40px;
   margin: 10px 0;
-  display: block;
   color: #000;
   font-size: 14.25px;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   text-decoration: none;
 }
 
-.most-popular {
-  float: right;
-  height: 500px;
-  width: 300px;
-}
-
-.division-spoilers {
-  border-bottom:
-    1px solid
-    rgb(226, 226, 226);
-  padding: 15px 0;
-  align-self: flex-start;
-}
-
-.nav-bottom {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin-bottom: 61px;
-  border-top: 4px double grey;
-}
-
-.nav-bottom-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-bottom-item-menu {
-  width: 1000px;
-  margin-top: 15px;
+.nav-bottom-item-menu a {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .nav-bottom-item a {
@@ -372,9 +246,176 @@ nav {
   text-decoration: none;
 }
 
+.photo-caption {
+  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.photo-caption span {
+  color: #888;
+  font-size: 14px;
+}
+
+.photo-caption span a {
+  text-decoration: none;
+  color: gray;
+}
+
+.date-icons {
+  display: block;
+}
+
+.social-icons {
+  float: right;
+}
+
+.inflation-theory-header h1 {
+  font-family: nyt-cheltenham, georgia, times new roman, times, serif;
+  font-weight: 700;
+  font-size: large;
+}
+
+.inflation-theory-header p {
+  font-family: nyt-cheltenham, georgia, times new roman, times, serif;
+  font-size: 16px;
+}
+
+.inflation-theory-container {
+  width: 945px;
+  margin: 15px 0;
+  position: relative;
+  right: 163px;
+}
+
+.inflation-theory-graphic {
+  height: 576px;
+  background: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: 945px;
+}
+
+.inflation-theory-tab {
+  float: left;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  padding-top: 130px;
+  width: 25%;
+}
+
+.inflation-theory-tab p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.inflation-theory-tab span {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 17px;
+  color: #000;
+}
+
+.inflation-theory-bottom {
+  color: #333;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+}
+
+.bicep2-photo {
+  position: relative;
+  right: 80px;
+}
+
+.bicep2-photo img {
+  width: 720px;
+}
+
+.more-articles {
+  clear: both;
+}
+
+.more-in-space {
+  width: 852px;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding-top: 15px;
+}
+
+.more-in-space h3 {
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.pictures-articles {
+  clear: both;
+}
+
+.article-thumbnails {
+  float: left;
+  width: 270px;
+  height: 297px;
+  margin: 10px 10px 0 0;
+}
+
+.editors-pics {
+  clear: both;
+  height: 371px;
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+
+.thumbnail-pic {
+  font-size: 0.625rem;
+  text-align: right;
+  color: rgb(153, 153, 153);
+}
+
+.most-popular {
+  padding-top: 15px;
+  height: 500px;
+  width: 25%;
+  float: right;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.most-popular h3 {
+  margin: 0;
+}
+
+.division-spoilers {
+  border-bottom:
+    1px solid
+    rgb(226, 226, 226);
+  padding-bottom: 20px;
+}
+
+.nav-bottom {
+  clear: both;
+  width: 100%;
+  margin-bottom: 61px;
+  border-top: 4px double grey;
+}
+
+.nav-bottom-item {
+  width: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-bottom-item-menu {
+  width: 1100px;
+  margin-top: 15px;
+}
+
 .bottom-menu-items li a {
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
 
 .nav-bottom-item a:hover {
@@ -396,10 +437,8 @@ nav {
 }
 
 .nav-left {
-  display: flex;
-  justify-content: space-between;
+  float: left;
   width: 225px;
-  padding: 0 15px;
 }
 
 .nav-left a:hover {
@@ -407,20 +446,21 @@ nav {
 }
 
 .nav-right {
-  display: flex;
+  float: right;
+  margin-top: -35px;
+}
+
+.nav-mid {
+  margin: auto;
 }
 
 .svg {
   width: 185px;
 }
 
-/* #region bottom-menu */
-
 .bottom-menu-container {
   border-bottom: 1px solid rgb(226, 226, 226);
-  display: flex;
   text-transform: capitalize;
-  justify-content: space-around;
   text-align: left;
   width: 100%;
   color: #000;
@@ -430,27 +470,38 @@ nav {
   line-height: 23px;
 }
 
-.bottom-menu-container .list-header {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: -10px;
-  margin-bottom: -30px;
-}
-
 .bottom-menu-items {
   clear: both;
-  display: flex;
-  width: 197px;
-  flex-direction: column;
+  display: inline-block;
+  width: 190px;
   text-align: left;
-  margin-left: -80px;
+  vertical-align: top;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.list-header {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.bottom-menu-items li {
+  float: left;
 }
 
 .bottom-menu-items li a:hover {
   text-decoration: underline;
 }
 
-.bottom-menu-items-right ul {
+.bottom-menu-items ul {
+  padding: 0;
+}
+
+.bottom-menu-items-right {
   border-left: 1px solid rgb(226, 226, 226);
   padding-left: 15px;
 }
