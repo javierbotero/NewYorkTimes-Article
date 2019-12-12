@@ -1,7 +1,5 @@
 New York Times Web Page
 
-> One paragraph statement about the project.
-
 This project is the cloning content and appearance of the New York Times web page. The main idea was to use the float property and all its features. 
 
 ![screenshot](assets/screenshot.png)
