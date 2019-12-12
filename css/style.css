@@ -25,6 +25,7 @@ footer {
 
 i {
   vertical-align: middle;
+  color: gray;
 }
 
 .footer-note {
@@ -42,7 +43,7 @@ i {
   text-decoration: none;
   font-size: small;
   font-weight: 700;
-
+  color: gray;
 }
 
 iframe {
@@ -58,7 +59,7 @@ button {
   color: #fff;
   font-size: 11px;
   font-weight: bolder;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   padding: 8px;
 }
 
@@ -87,6 +88,7 @@ li {
 #editor-pick {
   position: relative;
   top: 250px;
+  clear: both;
 }
 
 article {
@@ -146,6 +148,7 @@ figure {
   font-size: small;
   font-weight: 500;
   margin-bottom: 30px;
+  float: left;
 }
 
 .article-text {
@@ -166,6 +169,14 @@ figure {
 
 .article-thumbnails img {
   width: 100%;
+}
+
+.article-thumbnails a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+  font-size: 1.125rem;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
 }
 
 nav {
@@ -203,10 +214,43 @@ nav {
   font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
 }
 
+.pictures-articles a {
+  height: 40px;
+  margin: 10px 0;
+  color: #000;
+  font-size: 14.25px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  text-decoration: none;
+}
+
+.nav-bottom-item-menu a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.nav-bottom-item a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.nav-left a {
+  color: #000;
+  font-size: 14.25px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .photo-caption {
   font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
   font-size: 16px;
   color: #666;
+  margin-bottom: 10px;
 }
 
 .photo-caption span {
@@ -214,20 +258,18 @@ nav {
   font-size: 14px;
 }
 
-.date-icons {
-  display: block;
+.photo-caption span a {
+  text-decoration: none;
+  color: gray;
 }
 
-.article-date {
-  float: left;
+.date-icons {
+  display: block;
 }
 
 .social-icons {
   float: right;
 }
-
-
-/* #region inflation-theory */
 
 .inflation-theory-header h1 {
   font-family: nyt-cheltenham, georgia, times new roman, times, serif;
@@ -282,10 +324,8 @@ nav {
   line-height: 18px;
   font-weight: 500;
   font-style: normal;
-  font-family: nyt-franklin,arial,helvetica,sans-serif;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
 }
-
-/* #endregion */
 
 .bicep2-photo {
   position: relative;
@@ -300,14 +340,33 @@ nav {
   clear: both;
 }
 
+.more-in-space {
+  width: 852px;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding-top: 15px;
+}
+
+.more-in-space h3 {
+  padding-bottom: 20px;
+  margin: 0;
+}
+
 .pictures-articles {
   clear: both;
 }
 
 .article-thumbnails {
   float: left;
-  width: 272px;
-  margin: 10px 10px;
+  width: 270px;
+  height: 297px;
+  margin: 10px 10px 0 0;
+}
+
+.editors-pics {
+  clear: both;
+  height: 371px;
+  border-top: 1px solid black;
+  padding-top: 20px;
 }
 
 .thumbnail-pic {
@@ -316,26 +375,23 @@ nav {
   color: rgb(153, 153, 153);
 }
 
-.pictures-articles a {
-  height: 40px;
-  margin: 10px 0;
-  color: #000;
-  font-size: 14.25px;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-  text-decoration: none;
-}
-
 .most-popular {
+  padding-top: 15px;
   height: 500px;
   width: 25%;
   float: right;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.most-popular h3 {
+  margin: 0;
 }
 
 .division-spoilers {
   border-bottom:
     1px solid
     rgb(226, 226, 226);
-  padding: 15px 0;
+  padding-bottom: 20px;
 }
 
 .nav-bottom {
@@ -352,31 +408,14 @@ nav {
 }
 
 .nav-bottom-item-menu {
-  width: 1000px;
+  width: 1100px;
   margin-top: 15px;
-}
-
-.nav-bottom-item a {
-  text-decoration: none;
-  font-size: 12px;
-  color: rgb(102, 102, 102);
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-}
-
-.nav-left a {
-  color: #000;
-  font-size: 14.25px;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.7px;
-  line-height: 19px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .bottom-menu-items li a {
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
 
 .nav-bottom-item a:hover {
@@ -419,13 +458,9 @@ nav {
   width: 185px;
 }
 
-/* #region bottom-menu */
-
 .bottom-menu-container {
   border-bottom: 1px solid rgb(226, 226, 226);
-  display: flex;
   text-transform: capitalize;
-  justify-content: space-around;
   text-align: left;
   width: 100%;
   color: #000;
@@ -435,27 +470,38 @@ nav {
   line-height: 23px;
 }
 
-.bottom-menu-container .list-header {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: -10px;
-  margin-bottom: -30px;
-}
-
 .bottom-menu-items {
   clear: both;
-  display: flex;
-  width: 197px;
-  flex-direction: column;
+  display: inline-block;
+  width: 190px;
   text-align: left;
-  margin-left: -80px;
+  vertical-align: top;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.list-header {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.bottom-menu-items li {
+  float: left;
 }
 
 .bottom-menu-items li a:hover {
   text-decoration: underline;
 }
 
-.bottom-menu-items-right ul {
+.bottom-menu-items ul {
+  padding: 0;
+}
+
+.bottom-menu-items-right {
   border-left: 1px solid rgb(226, 226, 226);
   padding-left: 15px;
 }
